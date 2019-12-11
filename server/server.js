@@ -1,7 +1,7 @@
 const HTTPS_PORT = 8443;
 
-//const bodyPix = require('@tensorflow-models/body-pix');
-//const tfjs = require('@tensorflow/tfjs-node-gpu');
+const bodyPix = require('@tensorflow-models/body-pix');
+const tfjs = require('@tensorflow/tfjs-node-gpu');
 
 const fs = require('fs');
 const https = require('https');
