@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BodyPix Ayame</title>
+  <!-- Load TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script>
+  <!-- Load BodyPix -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
+
+  
+  
+</head>
+
+<body>
+  <div>
+    <button id="start_video_button" onclick="startVideo()">Start Video</button>
+  </div>
+  <div style="display:grid; grid-template-rows: 1fr; grid-template-columns: 170px 170px;">
+    <div style="grid-column:2;">
+      masked video<br>
+      <canvas id="canvas" width="640px" height="480px" style="border: solid 1px black; width:160px; height:120px;">
+    </canvas></div>
+  </div>
+  <div>
+    remote video<br>
+    <video id="remote_video" width="640px" height="480px" style="border: solid black 1px; width:320px; height:240px"></video>
+  </div>
+  
+  <script src="/webrtc.f9d0e5f3.js"></script>
+
+
+</body>
+
+</html>
