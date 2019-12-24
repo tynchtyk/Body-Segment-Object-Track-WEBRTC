@@ -20,3 +20,11 @@ Open two web pagers by visiting `https://localhost:8443`(you can also join with 
 And then click 'start' button from the sender page.
 
 
+Reference:
+https://github.com/tensorflow/tfjs-models/tree/master/body-pix    ///body pix segmentation model
+https://www.tensorflow.org/js   //  tensorflow js
+https://www.html5rocks.com/en/tutorials/webrtc/basics/   // webrtc guide
+https://vaadin.com/learn/tutorials/learn-pwa/turn-website-into-a-pwa  // conwerting website into pwa
+
+
+
