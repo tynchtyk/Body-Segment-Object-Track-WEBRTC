@@ -21,7 +21,7 @@
             }
             #container {
               position : relative;
-              width : 400px;
+              width : 800px;
               /*margin : 0px auto;*/
             }
       </style>
@@ -29,18 +29,20 @@
       <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script>
    
       <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
-
+      <link rel="manifest" href="./manifest.json">
 </head>
     
     <body>
 
         <div id="container">
-            <video id="remoteVideo" width="500" height="400" autoplay controls ></video>
-            <canvas id="overlay"width="500" height="400" ></canvas>
+            <video id="remoteVideo" width="800" height="800" autoplay controls ></video>
+            <canvas id="overlay"width="800" height="800" ></canvas>
         </div>
 
         <input type="button" id="start" onclick="start(true)" value="Start Video"></input>
-    
+      
+        <script src="https://cdn.jsdelivr.net/npm/@cloud-annotations/object-detection@0.0.8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/hls.js@0.12.4"></script>
         <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
         <script src="utils.js"></script>
         <script src="webrtc.js"></script>

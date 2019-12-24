@@ -3,6 +3,7 @@
 
     let localStream = null;
 
+
     let bodyPixNet = null;
     let animationId = null;
     let contineuAnimation = false;

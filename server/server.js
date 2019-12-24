@@ -1,7 +1,8 @@
 const HTTPS_PORT = 8443;
 
 const bodyPix = require('@tensorflow-models/body-pix');
-const tfjs = require('@tensorflow/tfjs-node-gpu');
+//const tfjs = require('@tensorflow/tfjs-node-gpu');
+//const objectDetector = require('@cloud-annotations/object-detection');
 
 const fs = require('fs');
 const https = require('https');
@@ -34,6 +35,76 @@ const handleRequest = function(request, response) {
     response.writeHead(200, {'Content-Type': 'application/javascript'});
     response.end(fs.readFileSync('client/utils.js'));
   }
+
+
+  ///#################################3
+
+  else if(request.url === '/model_web/model.json') {
+    response.writeHead(200, {'Content-Type': 'application/json'});
+    response.end(fs.readFileSync('client/model_web/model.json'));
+  }
+
+  else if(request.url === '/model_web/labels.json') {
+    response.writeHead(200, {'Content-Type': 'application/json'});
+    response.end(fs.readFileSync('client/model_web/labels.json'));
+  }
+
+
+  ///#################################3
+
+  else if(request.url === '/manifest.json') {
+    response.writeHead(200, {'Content-Type': 'application/json'});
+    response.end(fs.readFileSync('client/manifest.json'));
+  }
+
+  else if(request.url === '/img/icons/icon-512x512.png') {
+    response.writeHead(200, {'Content-Type': 'application/json'});
+    response.end(fs.readFileSync('client/img/icons/icon-512x512.png'));
+  }
+
+  
+
+  //################################3
+
+  else if(request.url === '/model_web/group1-shard1of6') {
+    response.writeHead(200, {'Content-Type': 'application/x-binary'});
+    response.end(fs.readFileSync('client/model_web/group1-shard1of6'));
+  }
+
+
+  else if(request.url === '/model_web/group1-shard2of6') {
+    response.writeHead(200, {'Content-Type': 'application/x-binary'});
+    response.end(fs.readFileSync('client/model_web/group1-shard2of6'));
+  }
+
+
+  else if(request.url === '/model_web/group1-shard3of6') {
+    response.writeHead(200, {'Content-Type': 'application/x-binary'});
+    response.end(fs.readFileSync('client/model_web/group1-shard3of6'));
+  }
+
+
+
+  else if(request.url === '/model_web/group1-shard4of6') {
+    response.writeHead(200, {'Content-Type': 'application/x-binary'});
+    response.end(fs.readFileSync('client/model_web/group1-shard4of6'));
+  }
+
+
+
+  else if(request.url === '/model_web/group1-shard5of6') {
+    response.writeHead(200, {'Content-Type': 'application/x-binary'});
+    response.end(fs.readFileSync('client/model_web/group1-shard5of6'));
+  }
+
+
+
+  else if(request.url === '/model_web/group1-shard6of6') {
+    response.writeHead(200, {'Content-Type': 'application/x-binary'});
+    response.end(fs.readFileSync('client/model_web/group1-shard6of6'));
+  }
+
+
 };
 
 const httpsServer = https.createServer(serverConfig,handleRequest);
