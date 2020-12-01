@@ -1,7 +1,7 @@
 Segmentation of body and sending it via WEBRTC
 ==============
 
-This is a simple web app that captures your video stream from webcam, uses body segmentation model to segment you body(Body will colored into white and the enviroment into black color) and sends the captured stream to another web page via WEBRTC 
+This is a simple progressive web app (PWA) that captures your video stream from webcam, uses body segmentation model to segment you body(Body will colored into white and the enviroment into black color) and sends the captured stream to another web page via WEBRTC 
 
 
 ## Before Usage
