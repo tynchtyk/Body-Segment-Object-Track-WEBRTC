@@ -21,10 +21,11 @@ And then click 'start' button from the sender page.
 
 
 Reference:
-https://github.com/tensorflow/tfjs-models/tree/master/body-pix    ///body pix segmentation model
-https://www.tensorflow.org/js   //  tensorflow js
-https://www.html5rocks.com/en/tutorials/webrtc/basics/   // webrtc guide
-https://vaadin.com/learn/tutorials/learn-pwa/turn-website-into-a-pwa  // conwerting website into pwa
+ 1. Body pix segmentation model https://github.com/tensorflow/tfjs-models/tree/master/body-pix 
+ 2. Tensorflow js https://www.tensorflow.org/js 
+ 3. Webrtc guide https://www.html5rocks.com/en/tutorials/webrtc/basics/ 
+ 4. Conwerting website into pwa https://vaadin.com/learn/tutorials/learn-pwa/turn-website-into-a-pwa 
+
 
 
 
