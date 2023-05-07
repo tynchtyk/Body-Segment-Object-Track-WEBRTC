@@ -27,7 +27,7 @@
     "@tensorflow/tfjs-node-gpu": "^1.4.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "ws": "^3.3.2",
     "express": "^4.17.1"
   },
